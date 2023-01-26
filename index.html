@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Html with CSS</title>
+    <style>
+      #Workarea {
+        display: grid;
+        grid-template-areas:
+          "head head head"
+          "maing maing maing"
+          "e1 e1 e1"
+          "e2 e2 e2"
+          "test test test"
+          "foot foot foot";
+        border: 1px solid black;
+      }
+      #header {
+        grid-area: head;
+        /* background-image: url('./logobin.png'); */
+        background-repeat: no-repeat;
+        background-position: 510px;
+        background-size: 45px;
+        background-color: rgb(255, 255, 255);
+      }
+      #main {
+        grid-area: maing;
+      }
+      #event1 {
+        grid-area: e1;
+      }
+      #event2 {
+        grid-area: e2;
+      }
+      #testimonial {
+        grid-area: test;
+      }
+      #footer {
+        grid-area: foot;
+      }
+      #Workarea div {
+        margin: 10px;
+        border: 1px solid black;
+      }
+      #main {
+        display: grid;
+        grid-template-areas:
+          "ms1g ms1g mag"
+          "ms2g ms2g mag";
+        border: 1px solid black;
+      }
+      #ms1 {
+        grid-area: ms1g;
+      }
+      #ms2 {
+        grid-area: ms2g;
+      }
+      #ma {
+        grid-area: mag;
+      }
+      #event1 {
+        display: grid;
+        grid-template-areas:
+          "es1g es1g eag"
+          "es2g es2g eag";
+        border: 1px solid black;
+      }
+      #es1 {
+        grid-area: es1g;
+      }
+      #es2 {
+        grid-area: es2g;
+      }
+      #ea {
+        grid-area: eag;
+      }
+      #event2 {
+        display: grid;
+        grid-template-areas:
+          "ees1g ees1g eeag"
+          "ees2g ees2g eeag";
+        border: 1px solid black;
+      }
+      #ees1 {
+        grid-area: ees1g;
+      }
+      #ees2 {
+        grid-area: ees2g;
+      }
+      #eea {
+        grid-area: eeag;
+      }
+      #logolist {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding-right: 60px;
+      }
+      #logolist > li {
+        padding-left: 50px;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Workarea">
+      <div id="header">
+        <nav>
+          <ul style="display: inline-flex">
+            <img
+              src="./logobin.png"
+              alt="logo"
+              width="50px"
+              style="border: 0px solid black; border-radius: 75%"
+            />
+            <h1 style="color: rgb(0, 0, 0); padding-left: 20px">
+              Programming Languages Cheatsheet
+            </h1>
+          </ul>
+          <ul id="logolist">
+            <li>
+              <img
+                src="./javalog.png"
+                alt="javalogo"
+                width="60px"
+                style="border: 0px solid black; border-radius: 75%"
+              />
+            </li>
+            <li>
+              <img
+                src="./pythonlogo.jpeg"
+                alt="pythonlogo"
+                width="60px"
+                style="border: 0px solid black; border-radius: 75%"
+              />
+            </li>
+            <li>
+              <img
+                src="./clogo.png"
+                alt="clogo"
+                width="60px"
+                style="border: 0px solid black; border-radius: 75%"
+              />
+            </li>
+            <li>
+              <img
+                src="./cpplogo.png"
+                alt="cpplogo"
+                width="60px"
+                style="border: 0px solid black; border-radius: 75%"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="main">
+        <div id="ms1">ms1</div>
+        <div id="ms2">ms2</div>
+        <div id="ma">ma</div>
+      </div>
+      <div id="event1">
+        <div id="es1">es1</div>
+        <div id="es2">es2</div>
+        <div id="ea">ea</div>
+      </div>
+      <div id="event2">
+        <div id="ees1">ees1</div>
+        <div id="ees2">ees2</div>
+        <div id="eea">eea</div>
+      </div>
+      <div id="testimonial">E</div>
+      <div id="footer">F</div>
+    </div>
+  </body>
+</html>
